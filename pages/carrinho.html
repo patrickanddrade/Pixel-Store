@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <title>Pixel Store</title>
+</head>
+<body>
+
+    <header>
+        <!-- Menu Horizontal -->
+        <nav class="menu">
+            <!-- Adicionando a logo -->
+            <img src="../imagens/PIXEL LOGO.jpg" alt="Logo do site" class="logo">
+    
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+            </ul>
+            <a href="login.html"><button class="login-button">Login</button></a>
+        </nav>
+        </header>
+        <br><br><br><br><br><br><br><br><br>
+        <section class="cart">
+            <div class="cart-item">
+                <img src="/Projeto_BackEnd_1.0/imagens/teclado produto 1.jpg" alt="Produto 1">
+                <div class="item-details">
+                    <h2>TECLADO FODA</h2>
+                    <p>Preço: R$ 100,00</p>
+                    <label for="quantity1">Quantidade:</label>
+                    <input type="number" id="quantity1" class="quantity" value="1" min="1">
+                </div>
+                <button class="remove-item">Remover</button>
+            </div>
+        
+            <div class="cart-item">
+                <img src="/Projeto_BackEnd_1.0/imagens/mousepad produto 5.jpeg" alt="Produto 2">
+                <div class="item-details">
+                    <h2>MOUSEPAD WHITE</h2>
+                    <p>Preço: R$ 50,00</p>
+                    <label for="quantity2">Quantidade:</label>
+                    <input type="number" id="quantity2" class="quantity" value="1" min="1">
+                </div>
+                <button class="remove-item">Remover</button>
+            </div>
+        
+            <div class="cart-total">
+                <h3>Total: R$ <span id="total">150.00</span></h3>
+            </div>
+        
+            <button id="checkout" class="checkout-btn">Finalizar Compra</button>
+        </section>
+        
+        
+        <br><b><br><br><br><br><br><br><br><br><br><br>
+        <!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Pixel Store é uma loja ficticia apenas construida para o intuito de entrega de projeto academico</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="./home.html">Inicio</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./hardware.html">Hardware</a></li>
+                <li><a href="./software.html">Software</a></li>
+                <li><a href="./saibamais.html">Saiba Mais</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@pixelstore.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Pixel Store. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script src="/Projeto_BackEnd_1.0/pages/js/carrinho.js"></script>
+
+</body>
+</html>

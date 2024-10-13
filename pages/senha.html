@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../pages/css/senha.css">
+    <title>Esqueceu Senha</title>
+</head>
+
+<header>
+    <!-- Menu Horizontal -->
+    <nav class="menu">
+        <!-- Adicionando a logo -->
+        <img src="../imagens/PIXEL LOGO.jpg" alt="Logo do site" class="logo">
+
+        <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="jogos.html">Jogos</a></li>
+        </ul>
+        <a href="login.html"><button class="login-button">Login</button></a>
+    </nav>
+    </header>
+<br><br><br><br><br><br><br>
+<body>
+
+    <main>
+        <section class="forgot-password">
+            <h1>Esqueceu sua senha?</h1>
+            <p>Insira seu e-mail abaixo para redefinir sua senha.</p>
+            <form action="forgot_password.php" method="post">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" name="email" id="email" required>
+                <input type="submit" value="Enviar link de redefinição">
+            </form>
+        </section>
+    </main>
+
+</body>
+<br><br><br><br><br><br><br><br>
+<!-- Rodapé -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>Pixel Store é uma loja ficticia apenas construida para o intuito de entrega de projeto academico</p>
+        </div>
+        <div class="footer-section">
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="./home.html">Inicio</a></li>
+                <li><a href="./produtos.html">Produtos</a></li>
+                <li><a href="./hardware.html">Hardware</a></li>
+                <li><a href="./software.html">Software</a></li>
+                <li><a href="./jogos.html">Jogos</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contato</h3>
+            <p>Email: contato@pixelstore.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Pixel Store. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,260 @@
+/* Menu */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes rgb-colors-menu {
+    0% { color: rgb(255, 255, 255); }
+    33% { color: rgb(4, 255, 4); }
+    66% { color: rgb(0, 153, 255); }
+    100% { color: rgb(255, 174, 0); }
+}
+
+/* Estilo da página de Login */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o fundo cubra a tela inteira */
+    background-color: rgb(27, 27, 27);
+    overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+}
+
+.menu {
+    background-color: black;
+    width: 100%; /* Largura total */
+    padding: 10px 0; /* Padding vertical para espaçamento interno */
+    overflow: hidden; /* Garante que o conteúdo não se sobreponha */
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0;
+    padding: 15px 20px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* Cor do texto */
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    animation: rgb-colors-menu 3s infinite; /* Animação de mudança de cor */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menu ul li a:hover {
+    background-color: rgb(146, 143, 145); /* Cor de fundo laranja no hover */ /* Cor de fundo laranja no hover */
+    color: #ffffff;
+}
+
+.menu ul li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px; /* Altura da linha */
+    top: 94px; /* Ajuste a posição da linha para um pouco abaixo do menu */
+    left: -100%; /* A linha começa fora do item */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: moveLineMenu 3s linear infinite, changeColorMenu 6s linear infinite;
+}
+
+/* Animação de movimento da linha */
+@keyframes moveLineMenu {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Animação de mudança de cor */
+@keyframes changeColorMenu {
+    0% {
+        background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    }
+    50% {
+        background: linear-gradient(90deg, purple, blue, green, yellow, orange, red);
+    }
+    100% {
+        background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    }
+}
+
+/* Espaçamento entre o menu e o formulário de login */
+.login-container {
+    display: flex;
+    width: 800px;
+    margin: 10px auto; /* Espaçamento superior de 50px para afastar do menu */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilos do formulário de login */
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.login-btn:hover {
+    background-color: #0056b3;
+}
+
+a.forgot-password {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.forgot-password:hover {
+    text-decoration: underline;
+}
+
+a.creat-login {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a.creat-login:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da imagem no login */
+.login-image {
+    flex: 1;
+    background-color: #f0f0f0;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #000000; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    padding: 40px 0; /* Espaçamento no topo e na base */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens de forma equilibrada */
+    max-width: 1200px;
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-section {
+    flex: 1; /* Cada seção ocupa o mesmo espaço */
+    padding: 0 20px; /* Espaçamento interno de cada seção */
+}
+
+.footer-section h3 {
+    margin-bottom: 20px; /* Espaçamento abaixo dos títulos */
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+    font-size: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline; /* Sublinhar no hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha superior fina */
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li a {
+        padding: 15px;
+        width: 100%; /* Links ocupam toda a largura da tela */
+        text-align: center; /* Centraliza o texto nos links */
+    }
+}
